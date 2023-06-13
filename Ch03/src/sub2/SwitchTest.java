@@ -28,5 +28,6 @@ public class SwitchTest {
 			break;
 		}
 		}
+		scan.close();
 	}
 }
