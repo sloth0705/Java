@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  * 날짜 : 2023/06/13
  * 이름 : 신진성 
- * 내용 : 자바 삼항연산자 연습문제
+ * 내용 : 자바 조건문 연습문제
  */
 public class Test05 {
 	public static void main(String[] args) {
