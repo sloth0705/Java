@@ -19,7 +19,7 @@ public class Test07 {
 			String[] input = br.readLine().split(" ");
 			a = Integer.parseInt(input[0]);
 			b = Integer.parseInt(input[1]);
-			bw.write(a + b + "\n");
+			bw.write("Case #" + i + ": " + (a + b) + "\n");
 
 		}
 		bw.flush();

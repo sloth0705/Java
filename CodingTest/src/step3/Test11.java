@@ -1,19 +1,30 @@
 package step3;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 public class Test11 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		long a = sc.nextLong();
-		long b = sc.nextLong();
-		long c = sc.nextLong();
+		int a = 0;
+		int b = 0;
 
-		long res = a + b + c;
-
-		System.out.println(res);
-
-		sc.close();
+		while (true) {
+			String[] input = br.readLine().split(" ");
+			a = Integer.parseInt(input[0]);
+			b = Integer.parseInt(input[1]);
+			if (a == 0 && b == 0) {
+				break;
+			} else {
+				bw.write((a + b) + "\n");
+			}
+		}
+		bw.flush();
+		bw.close();
 	}
 }
