@@ -1,15 +1,13 @@
 package Bronze;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class Test1223 {
-	public static void main(String[] args) throws IOException {
-		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-		int s1 = bf.read();
-		int s2 = bf.read();
-		int s3 = bf.read();
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int s1 = sc.nextInt();
+		int s2 = sc.nextInt();
+		int s3 = sc.nextInt();
 		int[] arr = new int[80];
 		int top = 0;
 		int num = 0;
@@ -27,5 +25,6 @@ public class Test1223 {
 			}
 		}
 		System.out.println(num);
+		sc.close();
 	}
 }

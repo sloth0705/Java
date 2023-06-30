@@ -17,7 +17,6 @@ public class SereializeTest {
 	public static void main(String[] args) {
 		// 객체 생성
 		Apple apple = new Apple("한국", 3000);
-
 		String path1 = "C:\\Users\\Java\\Desktop\\apple.dat";
 
 		try {
