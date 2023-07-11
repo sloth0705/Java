@@ -10,7 +10,15 @@ import java.util.List;
 /*
  * 날짜 : 2023/07/11
  * 이름 : 신진성 
- * 내용 : PreparedStatment 실습하기
+ * 내용 : PreparedStatement 실습하기
+ * 
+ * PreparedStatment
+ *  - 기존 Statement보다 향상된 동적 SQL 생성을 위한 Statement
+ *  - Query Parameter에 값을 Mapping 시켜 쿼리 실행
+ *  
+ * VO(Value Object)객체
+ *  - 도메인 값을 속성을 갖는 객체
+ *  - 테이블 개체(Entity)를 객체(Object)로 변환할 때 사용하는 객체
  */
 
 // VO객체 : 테이블 Entity가 변환되는 객체
@@ -95,7 +103,7 @@ public class PreparedSelectTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 		// List 결과 출력
 		for (User2VO vo : users) {
 			System.out.println("---------------------");
@@ -105,7 +113,7 @@ public class PreparedSelectTest {
 			System.out.println("나이 : " + vo.getAge());
 			System.out.println("---------------------");
 		}
-		
+
 		System.out.println("Select 완료...");
 	}
 }

@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 /*
  * 날짜 : 2023/07/11
  * 이름 : 신진성 
- * 내용 : PreparedStatment 실습하기
+ * 내용 : PreparedStatement 실습하기
  */
 public class PreparedUpdateTest {
 	public static void main(String[] args) {
