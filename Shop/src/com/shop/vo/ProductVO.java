@@ -2,7 +2,7 @@ package com.shop.vo;
 
 public class ProductVO {
 	private int prodNo;
-	private String prdoName;
+	private String prodName;
 	private int stock;
 	private int price;
 	private String company;
@@ -15,12 +15,12 @@ public class ProductVO {
 		this.prodNo = prodNo;
 	}
 
-	public String getPrdoName() {
-		return prdoName;
+	public String getProdName() {
+		return prodName;
 	}
 
-	public void setPrdoName(String prdoName) {
-		this.prdoName = prdoName;
+	public void setProdName(String prodName) {
+		this.prodName = prodName;
 	}
 
 	public int getStock() {
@@ -45,5 +45,10 @@ public class ProductVO {
 
 	public void setCompany(String company) {
 		this.company = company;
+	}
+	
+	@Override
+	public String toString() {
+		return prodNo + ", " + prodName + ", " + stock + ", " + price + ", " + company; 
 	}
 }

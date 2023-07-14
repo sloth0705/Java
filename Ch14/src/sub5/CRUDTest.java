@@ -62,7 +62,7 @@ public class CRUDTest {
 				String uid = sc.next();
 				UserVO vo = UserDAO.getInstance().selectUser(uid);
 				System.out.println("--------검색결과--------");
-				System.out.println(vo);
+				System.out.println(vo == null ? "해당되는 사용자가 없습니다." : vo);
 				System.out.println("---------------------");
 			} else if (answer == 4) {
 				// 수정
